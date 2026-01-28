@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultValue>&quot;Passive&quot;</defaultValue>
+    <fullName>NPS_Category__c</fullName>
+    <inlineHelpText>Choose the Net Promoter Score based on the average of survey results.</inlineHelpText>
+    <label>NPS Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Promoter</fullName>
+                <label>Promoter</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Passive</fullName>
+                <label>Passive</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Detractor</fullName>
+                <label>Detractor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
