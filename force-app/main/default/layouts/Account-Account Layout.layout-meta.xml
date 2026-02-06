@@ -34,11 +34,11 @@
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>Phone</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
+                <behavior>Edit</behavior>
                 <field>Fax</field>
             </layoutItems>
             <layoutItems>
@@ -53,7 +53,7 @@
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Account Health &amp; Engagement</label>
-        <layoutColumns></layoutColumns>
+        <layoutColumns/>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -67,7 +67,7 @@
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Customer Health</label>
-        <layoutColumns></layoutColumns>
+        <layoutColumns/>
         <layoutColumns>
             <layoutItems>
                 <emptySpace>true</emptySpace>
@@ -441,7 +441,7 @@
             <sortOrder>42</sortOrder>
         </platformActionListItems>
     </platformActionList>
-    <quickActionList></quickActionList>
+    <quickActionList/>
     <relatedLists>
         <fields>FULL_NAME</fields>
         <fields>CONTACT.TITLE</fields>
