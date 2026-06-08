@@ -1,4 +1,11 @@
+
+/**
+ * Provides helper methods to update Account sales guidance fields based on Opportunity activity and to log resulting changes.
+ */
 public class AccountSalesHelper {
+    /**
+     * Evaluates recent Opportunity activity and Account data to set Priority_Level__c and Next_Best_Action__c on each input Account.
+     */
     public static void updateSalesGuidance(List<Account> accounts) {
         Set<Id> accountIds = new Set<Id>();
         for (Account acc : accounts) {
@@ -60,7 +67,9 @@ public class AccountSalesHelper {
         logAccountUpdates(accounts, oldAccountValues);
     }
 
-    // New method to log changes to Priority_Level__c and Next_Best_Action__c
+    /**
+     * Captures and inserts audit records for changes to Priority_Level__c and Next_Best_Action__c between old and new Account values.
+     */
     public static void logAccountUpdates(List<Account> accounts, Map<Id, Account> oldAccountValues) {
         List<SObject> logs = new List<SObject>();
         for (Account acc : accounts) {
@@ -103,7 +112,9 @@ public class AccountSalesHelper {
         }
     }
 
-    // Helper method to create a log record (dynamic to handle Log__c availability)
+    /**
+     * Constructs a dynamic Log__c SObject describing a field change for an Account when the custom object exists.
+     */
     private static SObject createLogRecord(Id accountId, String fieldName, String oldValue, String newValue) {
         // Check if Log__c object exists (for compilation safety)
         if (Schema.getGlobalDescribe().containsKey('Log__c')) {
