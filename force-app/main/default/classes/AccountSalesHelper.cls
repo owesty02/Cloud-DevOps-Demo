@@ -5,7 +5,7 @@ public class AccountSalesHelper {
             accountIds.add(acc.Id);
         }
 
-        // Query recent open opportunities (last 90 days)
+        // Query recent open opportunities (last 90 days) extra text
         Map<Id, Boolean> recentOpenOpps = new Map<Id, Boolean>();
         for (Opportunity opp : [
             SELECT AccountId FROM Opportunity 
