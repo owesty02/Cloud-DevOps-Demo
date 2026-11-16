@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>omnistudio__DataSourceType__c</fullName>
+    <label>Data Source Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Data Input</fullName>
+                <label>Data Input</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>List Input</fullName>
+                <label>List Input</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>No Input</fullName>
+                <label>No Input</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Query</fullName>
+                <label>Query</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
