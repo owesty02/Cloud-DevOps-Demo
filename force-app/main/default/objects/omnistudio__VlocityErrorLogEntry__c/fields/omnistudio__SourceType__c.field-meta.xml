@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>omnistudio__SourceType__c</fullName>
+    <label>Source Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Dataraptor</fullName>
+                <label>Data Mapper</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Integration Procedure</fullName>
+                <label>Integration Procedure</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Omniscript</fullName>
+                <label>Omniscript</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
